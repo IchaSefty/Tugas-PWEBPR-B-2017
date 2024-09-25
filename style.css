@@ -1,0 +1,571 @@
+*html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+img{
+    width: 100%;
+}
+
+@media (min-width: 1280px){
+    header{
+        display: flex;
+        background-color: #D9D9D9;
+        width: 100%;
+        height: 50px;
+        justify-content: center;
+        align-items: center;
+        z-index: 999;
+        position: fixed;
+        top: 0;
+    }
+    .Header{
+        display: flex;
+        justify-content: center;
+        max-width: 1540px;
+    }
+    .Header li{
+        display: inline-block;
+        margin: 30px;
+        font-weight: 550;
+    }
+
+
+    .judul{
+        display: flex;
+        font-size: 250%;
+        width: 100%;
+        height: 100px;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+        font-weight: 550;
+    }
+
+    tbody{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .container{
+        display: grid;
+        max-width: 1400px;
+        height: 550px;
+        grid-template-areas: 
+        'Card1 Card1 Card2'
+        'Card3 Card4 Card2'
+        'Card5 Card4 Card6';
+        grid-template-columns: 1fr 1fr 2fr;
+        grid-template-rows: repeat(3, 1fr);
+        gap: 20px;
+    }
+
+    .container > *{
+        border-radius: 20px;
+        -o-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -webkit-border-radius: 20px;
+    }
+
+
+    .card1{
+        display: flex;
+        background-color: #FFF4DC;
+        grid-area: Card1;
+    }
+    .img1{
+        width: 40%;
+    }
+    .deskripsi1{
+        position: relative;
+    }
+    .deskripsi1 h1{
+        font-family: sans-serif;
+    }
+    .deskripsi1 p {
+        font-size: 150%;
+    }
+    .card1 button{
+        background-color: #E29A00;
+        color: #FFFFFF;
+        width: 100%;
+        height: 50px;
+        position: absolute;
+        bottom: 20px;
+        border-radius: 20px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+        font-size: 120%;
+        border: none;
+        outline: none;
+        cursor: pointer;
+    }
+
+    .card2{
+        display: flex;
+        background-color: #F4F4F4;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+        grid-area: Card2;
+    }
+    .card2 > *{
+        display: flex;
+        background-color: white;
+        border: 2px solid #F2F2F2;
+        width: 80%;
+        height: 25%;
+        align-items: center;
+        border-radius: 20px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+    }
+    .card2>*>*{
+        margin-left: 20px;
+    }
+    .card2 figure{
+        width: 20%;
+    }
+    .card2 article{
+        width: 70%;
+    }
+    .card2 h2{
+        font-family: sans-serif;
+    }
+    .card2 button{
+        background-color: #D8D6C1;
+        color: #FFFFFF;
+        width: 50%;
+        height: 30px;
+        font-weight: bold;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        margin-top: 20px;
+        border-radius: 20px;
+        -o-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+    }
+
+    .card3{
+        background: #E1FFDC;
+        position: relative;
+        grid-area: Card3;
+    }
+    .img2{
+        margin-top: 20px;
+    }
+    .card3 button{
+        width: 80%;
+        height: 40px;
+        background: #7EB782;
+        color: #FFFFFF;
+        font-size: 120%;
+        position: absolute;
+        bottom: 10px;
+        border: none;
+        outline: none;
+        left: 10%;
+        cursor: pointer;
+        border-radius: 20px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+    }
+
+    .card4{
+        background: #E2F2FF;
+        position: relative;
+        /* z-index: 2; */
+        grid-area: Card4;
+    }
+    .deskripsi2 h1{
+        font-family:sans-serif;
+    }
+    .deskripsi2 {
+        display: flex;
+        flex-direction: column;
+        top: 200px;
+        bottom: 0;
+        text-align: center;
+        justify-content: center;
+        position: absolute;
+    }
+    .deskripsi2 p{
+        font-size: 20px;
+    }
+    .card4 button{
+        background-color: #3279AF;
+        color: #FFFFFF;
+        width: 80%;
+        height: 40px;
+        bottom: 10px;
+        font-size: 120%;
+        border: none;
+        cursor: pointer;
+        outline: none;
+        left: 10%;
+        border-radius: 20px;
+        -o-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        position:absolute;
+    }
+
+
+    .card5{
+        position: relative;
+        background: #FFCED7;
+        grid-area: Card5;
+    }
+    .img3{
+        margin-top: 20px;
+    }
+    .card5 button{
+        background-color: #FF5573;
+        color: #FFFFFF;
+        width: 80%;
+        height: 40px;
+        bottom: 10px;
+        font-size: 120%;
+        border: none;
+        cursor: pointer;
+        outline: none;
+        left: 10%;
+        border-radius: 20px;
+        -o-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        position:absolute;
+
+    }
+
+    .card6{ 
+        background-color: #F4F4F4;
+        display: flex;
+        grid-area: Card6;
+    }
+    .card6>*{
+        display: flex;
+        align-items: center;
+    }
+    .card6 figure{
+        width: 60%;
+    }
+    .card6 h3{
+        font-family: sans-serif;
+    }
+    .card6 article{
+        width: 55%;
+    }
+    .card6 button{
+        color: #FFFFFF;
+        font-weight: 550;
+        background: #D8D6C1;
+        border: none;
+        outline: none;
+        margin-top: 30px;
+        height: 65px;
+        width: 90%;
+        border-radius: 10px;
+        -o-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+    }
+}
+
+@media(max-width:1280px){
+    header{
+        width: 100%;
+        background-color: #D9D9D9;
+        display: flex;
+        justify-content: center;
+        position: fixed;
+        bottom: 0;
+        z-index: 999;
+    }
+
+    .Header{
+        width: 425px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .Header li{
+        display: inline-block;
+        margin: 10px;
+        font-weight: 550;
+    }
+
+    .judul{
+        display: flex;
+        width: 100%;
+        height: 100px;
+        justify-content: center;
+        align-items: center;
+        font-size: 250%;
+        margin: 40px 0;
+        font-weight: 550;
+    }
+
+    .container{
+        display: grid;
+        grid-template-areas: 
+        'Card1'
+        'Card3'
+        'Card5'
+        'Card4'
+        'Card2'
+        'Card6';
+        place-items: center;
+        gap: 30px;
+    }
+    .container>*{
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+    }
+
+    .card1{
+        background-color: #FFF4DC;
+        border-radius: 20px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+        grid-area: Card1;
+    }
+    .deskripsi1{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        position: relative;
+    }
+    .deskripsi1 h1{
+        order: 2;
+        text-align: center;
+    }
+    .deskripsi1 p{
+        display: flex;
+        order: 3;
+        justify-content: center;
+    }
+    .card1 button{
+        order: 1;
+        height: 70px;
+        background-color: #E29A00;
+        border-radius: 15px;
+        -webkit-border-radius: 15px;
+        -moz-border-radius: 15px;
+        -ms-border-radius: 15px;
+        -o-border-radius: 15px;
+        color: white;
+        font-size: 150%;
+        border: none;
+        outline: none;
+        width: 85%;
+        transform: translate(30px);
+        -webkit-transform: translate(30px);
+        -moz-transform: translate(30px);
+        -ms-transform: translate(30px);
+        -o-transform: translate(30px);
+    }
+
+    .card2{
+        gap: 20px;
+        grid-area: Card2;
+    }
+    .card2>*{
+        background-color: #E9E8E2;
+        position: relative;
+        border-radius: 20px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+    }
+    .card2 h2{
+        display: none;
+    }
+    .card2 button{
+        bottom: 10px;
+        width: 70%;
+        height: 75px;
+        left: 15%;
+        background: #CAC8B3;
+        color: #FFFFFF;
+        border: none;
+        outline: none;
+        position: absolute;
+        font-size: 120%;
+        border-radius: 20px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+    }
+
+    .card3{
+        display: flex;
+        background-color: #E1FFDC;
+        position: relative;
+        justify-content: center;
+        border-radius: 20px;
+        -o-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        grid-area: Card3;
+    }
+    .card3 button{
+        background-color: #7EB782;
+        color: #FFFFFF;
+        position: absolute;
+        width: 80%;
+        bottom: 10px;
+        height: 75px;
+        font-size: 150%;
+        border: none;
+        outline: none;
+        left: 40px;
+        border-radius: 20px;
+        -o-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+    }
+
+    .card4{
+        display: flex;
+        background-color: #E2F2FF;
+        border-radius: 20px;
+        -o-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        grid-area: Card4;
+    }
+    .card4>*{
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+    }
+    .deskripsi2 h1{
+        order: 2;
+    }
+    .deskripsi2 p{
+        order: 3;
+    }
+    .card4 button{
+        background-color: #3279AF;
+        color: #FFFFFF;
+        font-size: 150%;
+        border: none;
+        outline: none;
+        width: 85%;
+        order: 1;
+        height: 75px;
+        left: 30px;
+        border-radius: 15px;
+        -webkit-border-radius: 15px;
+        -moz-border-radius: 15px;
+        -ms-border-radius: 15px;
+        -o-border-radius: 15px;
+        transform: translate(30px);
+        -webkit-transform: translate(30px);
+        -moz-transform: translate(30px);
+        -ms-transform: translate(30px);
+        -o-transform: translate(30px);
+    }
+
+    .card5{
+        display: flex;
+        background-color: #FFCED7;
+        justify-content: center;
+        position: relative;
+        border-radius: 20px;
+        -o-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        grid-area: Card5;
+    }
+    .card5 button{
+        background-color: #FF5573;
+        color: #FFFFFF;
+        width: 80%;
+        height: 75px;
+        bottom: 10px;
+        border: none;
+        outline: none;
+        position:absolute;
+        left: 50px;
+        font-size: 150%;
+        border-radius: 20px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+    }
+    .card6{
+        gap: 20px;
+        margin-bottom: 100px;
+        grid-area: Card6;
+    }
+    .card6>*{
+        position: relative;
+        border-radius: 20px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+    }
+    .card6 h3{
+        display: none;
+    }
+    .card6 .karakter4{
+        background: #FFDBC5;
+    }
+    .card6 .karakter5{
+        background: #8FC5ED;
+    }
+    .card6 .karakter4 button{
+        background-color: #E36415;
+    }
+    .card6 .karakter5 button{
+        background-color: #275E87;
+    }
+    .card6 button{
+        color: #FFFFFF;
+        width: 80%;
+        height: 75px;
+        bottom: 10px;
+        border: none;
+        outline: none;
+        position:absolute;
+        left: 40px;
+        font-size: 150%;
+        border-radius: 20px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+    }
+}
